@@ -24,6 +24,11 @@ public class Programme_7_Commission {
         System.out.println("Enter Basic Salary: ");
         double basicSalary = scanner.nextDouble();
         scanner.close(); // scanner closer
+        commission(salesAmount);
+
+    }
+
+        public static void commission(double salesAmount){
 
         // Calculation of Commission
         if (salesAmount >= 50000) { // logic given in question

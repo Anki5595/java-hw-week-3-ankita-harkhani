@@ -46,7 +46,7 @@ public class Programme_3_MarkSheet {
         System.out.println("Enter English marks: "); // printing a statement
         double English = scanner.nextDouble(); // going to next line
 
-//      // if the entered marks in-between 0 and 100 for each subjects
+   // if the entered marks in-between 0 and 100 for each subjects
         if (Math < 0 || Math > 100 || Science < 0 || Science > 100 || English < 0 || English > 100) { // condition given in question
             System.out.println("Invalid input, Marks should between 0 and 100"); // print a statement if data is invalid
             return; // return statement
@@ -57,7 +57,7 @@ public class Programme_3_MarkSheet {
         double percentage = (totalMarks / 300) * 100;
         // display result
         System.out.println("Percentage " + percentage); // print statement
-        String result = (percentage >= 35) ? "Pass" : "Fail"; // used ternary operator
+        String result = (percentage >= 35 && Math >= 35 && Science >= 35 && English >= 35) ? "Pass" : "Fail"; // used ternary operator
 
         // Grade calculation
         String Grade = "";

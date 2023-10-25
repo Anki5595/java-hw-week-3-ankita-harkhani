@@ -33,7 +33,7 @@ public class Programme_7_Commission {
         // Calculation of Commission
         if (salesAmount >= 50000) { // logic given in question
             System.out.println("Commission: " + salesAmount * 35 / 100); // printing a statement is sales amount is >= 50000
-        } else if (salesAmount >= 35000) {
+        } else if (salesAmount >= 30000) {
             System.out.println("Commission: " + salesAmount * 20 / 100);  // printing a statement is sales amount is >= 35000
         } else if (salesAmount >= 20000) {
             System.out.println("Commission: " + salesAmount * 10 / 100);  // printing a statement is sales amount is >= 20000

@@ -10,14 +10,18 @@ public class Programme_1_TernaryOperator {
 
     public static void main(String[] args) {
         // input number
-        System.out.println("Enter a number: ");
-
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
         int number = scanner.nextInt();
-
-        // use ternary operator to check the number is odd or even
-        String result = (number % 2 == 0) ? "Even" : "Odd";
-        System.out.println("The enter number is: " + result); // output
+        Programme_1_TernaryOperator obj = new Programme_1_TernaryOperator();
+        obj.number(number);
         scanner.close(); // scanner close
+    }
+
+        public void number(int number) {
+            // use ternary operator to check the number is odd or even
+            String result = (number % 2 == 0) ? "Even" : "Odd";
+            System.out.println(number + " is " + result + " number"); // output
+
     }
 }
